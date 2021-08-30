@@ -1,0 +1,236 @@
+/* Navbar */
+.navbar {
+    background-color: var(--primary-color);
+    height: 70px;
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+.navbar nav ul {
+    display: flex;
+}
+
+.navbar ul a {
+    color: #fff;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.navbar ul a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+/* Showcase */
+.showcase {
+    height: 400px;
+    background-color: var(--primary-color);
+    color: #fff;
+    position: relative;
+}
+
+.showcase h1 {
+    font-size: 40px;
+}
+
+.showcase .grid {
+    grid-template-columns: 60% 40%;
+    gap: 40px;
+    overflow: visible;
+}
+
+.showcase-form {
+    position: relative;
+    top: 60px;
+    height: 350px;
+    width: 400px;
+    padding: 40px;
+    z-index: 100;
+    justify-self: flex-end;
+}
+
+.showcase-form > h2 {
+    color: var(--text-color);
+}
+
+.showcase .form-control {
+    margin: 30px 0;
+}
+
+.showcase input[type="text"],
+.showcase input[type="email"] {
+    border: none;
+    border-bottom: 1px solid #b4becd;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+}
+
+.showcase input:focus {
+    outline: none;
+}
+
+.showcase::after {
+    content: '';
+    position: absolute;
+    height: 100px;
+    bottom: -70px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    transform: skewY(-2deg);
+}
+
+/* Statistics */
+.stats {
+    padding-top: 100px;
+}
+.stats-heading {
+    max-width: 500px;
+    margin: auto;
+    overflow: hidden;
+}
+.stats .grid h4 {
+    font-size: 2rem;
+}
+.stats .grid p {
+    font-size: 20px;
+}
+
+
+/* CLI */
+.cli .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0;
+}
+.cli .grid > *:first-child {
+    grid-column: 2 / span 2;
+    grid-row:  1 / span 2;
+}
+
+/* Cloud */
+.cloud {
+    background-color:var(--primary-color);
+}
+.cloud .grid {
+    grid-template-columns: 60% 40%;
+    gap: 40px;
+}
+.cloud__info{
+    color: #fff;
+}
+.cloud__info h3 {
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-weight: 400;
+    line-height: 3rem;
+}
+.cloud__info p {
+    font-size: 20px;
+}
+.cloud__info .btn {
+    padding: 12px 30px;
+}
+
+/* Languages */
+.languages {
+    margin-bottom: 30px;
+}
+.languages .flex {
+    flex-wrap: wrap;
+}
+.languages > h3 {
+    font-size: 2rem;
+}
+.languages .card {
+    text-align: center;
+    transition: all 0.35s ease;
+}
+.languages .card h4 {
+    margin-bottom: 10px;
+}
+
+.languages .card:hover {
+    transform: translateY(-10px)   ;
+}
+
+/* Footer */
+.footer {
+    color: #fff;
+}
+.footer h2 {
+    font-size: 1.8rem;
+}
+.footer a {
+    color: #fff;
+}
+.footer nav a:hover {
+    text-decoration: underline;
+}
+.footer .social ul {
+    display: flex;
+    gap: 20px;
+}
+.footer .social i {
+    font-size: 1.8rem;
+}
+
+
+/* Media query */
+@media (max-width: 768px) {
+
+    .showcase .grid,
+    .stats .grid,
+    .cli .grid,
+    .cloud .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+
+    .showcase .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+  
+    .showcase {
+        height:auto;
+        padding-top: 30px;
+    }
+
+    .showcase-text {
+        text-align: center;
+    }
+
+    .showcase-form {
+        justify-self: center;
+    }
+    .cli .grid > *:first-child {
+            grid-column: 1;
+    grid-row: 1;
+    }
+    .cloud {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 500px) {
+    .navbar {
+        height:110px;
+    }
+    .navbar .flex {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .navbar .logo {
+        margin-bottom: 20px;
+    }
+    .navbar nav ul {
+        background-color: rgba(0,0,0,0.1);
+        border-radius: 3px;
+        padding: 6px 0;
+    }
+  
+}

@@ -1,0 +1,199 @@
+/* Navbar */
+.navbar {
+    background-color: var(--primary-color);
+    height: 70px;
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+.navbar nav ul {
+    display: flex;
+}
+
+.navbar ul a {
+    color: #fff;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.navbar ul a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+
+/* Footer */
+.footer {
+    margin-top: 30px;
+    color: #fff;
+}
+.footer h2 {
+    font-size: 1.8rem;
+}
+.footer a {
+    color: #fff;
+}
+.footer nav a:hover {
+    text-decoration: underline;
+}
+.footer .social ul {
+    display: flex;
+    gap: 20px;
+}
+.footer .social i {
+    font-size: 1.8rem;
+}
+
+/* Header */
+.docs {
+    background-color: var(--primary-color);
+    padding: 50px 0;
+}
+.docs h1 {
+    font-size: 56px;
+    line-height: 4rem;
+}
+.docs p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* Main */
+.main .flex {
+    align-items: flex-start;
+    padding: 60px 40px;
+    gap: 20px;
+}
+.main .flex .side-nav {
+    flex-basis: 35%;
+    animation: slideInFromBottom 0.75s ease;
+}
+.main .flex .content {
+    flex-basis: 65%;
+    animation: slideInFromBottom 0.75s ease;
+}
+
+.side-nav .card {
+    background-color: #eee;
+    padding: 60px 30px 4px;
+    display: flex;
+    flex-direction: column;
+}
+.side-nav .card h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.side-nav .card ul {
+    margin-bottom: 30px;
+}
+.side-nav .card li {
+    padding: 10px 0;
+    border-bottom: 1px solid #999;
+    font-size: 18px;
+}
+.side-nav .card li.active {
+    color: var(--primary-color);
+}
+
+.content > .header {
+        font-size: 26px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.content > .detail {
+    margin-bottom: 20px;
+
+}
+.content > .note {
+    margin-bottom: 20px;
+    color:#fff;
+    background-color: #4A9A53;
+    padding: 6px 10px;
+    font-weight: 300;
+}
+.content > .note i {
+    padding: 0 6px;
+}
+
+.info {
+    margin-bottom: 30px;
+}
+.info .header {
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+.info .detail {
+    margin-bottom: 10px;
+    line-height: 1.8rem;
+} 
+.info pre {
+        background: #333;
+    color: #fff;
+    padding: 6px 10px;
+}
+
+.info.requirement .detail {
+    margin-bottom: 0;
+}
+
+.install.info .detail {
+    margin-top: 10px;
+}
+
+
+
+/* Media query */
+@media (max-width: 992px) {
+    .main .flex {
+        flex-direction: column;
+    }
+    .main .flex > * {
+        flex-grow: 1;
+    }
+    .main .flex .side-nav {
+        width: 100%;
+    }
+
+    .side-nav .card {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    .side-nav .card > * {
+        flex-basis: 50%;
+    }
+    
+    .main .flex .content {
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 500px) {
+    .navbar {
+        height:110px;
+    }
+    .navbar .flex {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .navbar .logo {
+        margin-bottom: 20px;
+    }
+    .navbar nav ul {
+        background-color: rgba(0,0,0,0.1);
+        border-radius: 3px;
+        padding: 6px 0;
+    }
+
+    .side-nav .card {
+        padding-top: 36px;
+    }    
+  
+}

@@ -1,0 +1,168 @@
+/* Navbar */
+.navbar {
+    background-color: var(--primary-color);
+    height: 70px;
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+.navbar nav ul {
+    display: flex;
+}
+
+.navbar ul a {
+    color: #fff;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.navbar ul a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+
+/* Footer */
+.footer {
+    color: #fff;
+}
+.footer h2 {
+    font-size: 1.8rem;
+}
+.footer a {
+    color: #fff;
+}
+.footer nav a:hover {
+    text-decoration: underline;
+}
+.footer .social ul {
+    display: flex;
+    gap: 20px;
+}
+.footer .social i {
+    font-size: 1.8rem;
+}
+
+/* Feature */
+.feature {
+    background-color: var(--primary-color);
+    padding: 60px 0;
+}
+.feature .flex {
+    justify-content: space-between;
+    
+}
+.feature .flex > * {
+    flex-basis: 50%;
+}
+.feature .info-container {
+    color: #fff;
+} 
+.feature .info-container h1 {
+    font-size: 56px;
+    line-height: 3.5rem;
+}
+.feature .info-container p {
+    line-height: 2rem;
+    font-size: 20px;
+}
+.feature .img-parent {
+    text-align: right;
+}
+.feature .img-parent img {
+    width: 250px;
+}
+
+/* Platform */
+.platform {
+    background-color: #efefef;
+    padding: 60px 0;
+}
+.platform .flex {
+    justify-content: space-between;
+}
+.platform .flex > * {
+    flex-basis: 50%;
+}
+.platform .info-container {
+    color: #000;
+} 
+.platform .info-container h2 {
+    color: #000;
+    font-size: 32px;
+    line-height: 2.5rem;
+    font-weight: 400;
+}
+.platform .info-container p {
+    line-height: 1.8rem;
+    font-size: 18px;
+}
+.platform .img-parent {
+    text-align: right;
+}
+.platform .img-parent img {
+    width: 300px;
+}
+
+/* Technologies */
+.technology {
+    padding: 60px 0;
+}
+.technology .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+}
+.technology .grid > *:nth-child(1) {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+}
+.technology .grid > *:nth-child(2) {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+}
+.technology .card.flex {
+    gap: 20px;
+}
+
+/* Media query */
+@media (max-width: 768px) {
+    .feature .flex {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .feature .info-container {
+        text-align: center;
+    }
+
+    .platform .flex {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .technology .grid {
+        grid-template-columns: 1fr;
+    }
+    .technology .grid > * {
+        grid-column: 1;
+    }
+}
+
+@media (max-width: 500px) {
+    .navbar {
+        height:110px;
+    }
+    .navbar .flex {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .navbar .logo {
+        margin-bottom: 20px;
+    }
+    .navbar nav ul {
+        background-color: rgba(0,0,0,0.1);
+        border-radius: 3px;
+        padding: 6px 0;
+    }
+  
+}
