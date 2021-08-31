@@ -166,10 +166,10 @@
     }
 
 
-    .showcase .grid, .stats .grid, .cli .grid, .cloud .grid {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
+   section > .container {
+       padding-left: 10px;
+       padding-right: 10px;
+   }
 
     .showcase-form {
         width: unset;
