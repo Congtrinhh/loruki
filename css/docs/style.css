@@ -196,4 +196,19 @@
         padding-top: 36px;
     }    
   
+    .showcase .grid, .stats .grid, .cli .grid, .cloud .grid {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .showcase-form {
+        width: unset;
+    max-width: 100%;
+}
+    .footer .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer .social {
+        margin-top: 10px;
+    }
 }
