@@ -65,6 +65,7 @@
     align-items: flex-start;
     padding: 60px 40px;
     gap: 20px;
+    overflow: hidden;
 }
 .main .flex .side-nav {
     flex-basis: 35%;

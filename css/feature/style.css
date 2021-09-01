@@ -112,6 +112,7 @@
 .technology .grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 0;
+    overflow: hidden;
 }
 .technology .grid > *:nth-child(1) {
     grid-column: 1 / span 3;
